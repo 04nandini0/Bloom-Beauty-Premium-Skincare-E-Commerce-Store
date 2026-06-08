@@ -1,21 +1,23 @@
-# Velvet Vogue — Luxury Fashion E-Commerce
+# Bloom Beauty — Premium Skincare E-Commerce
 
-> *Luxury Fashion Redefined*
+### Healthy Skin. Beautiful Confidence.
 
-A complete, production-quality luxury fashion e-commerce website built with pure HTML5, CSS3, and Vanilla JavaScript (ES6+). No frameworks. No dependencies beyond Google Fonts and Font Awesome CDN.
+A complete, production-quality skincare and beauty e-commerce website built using pure HTML5, CSS3, and Vanilla JavaScript (ES6+). Designed with a soft pastel aesthetic, Pinterest-inspired layouts, and modern e-commerce functionality.
+
+No frameworks. No build tools. Just clean frontend development.
 
 ---
 
 ## 🗂 Project Structure
 
-```
-velvet-vogue/
-├── index.html         # Main HTML document (semantic, SEO-friendly)
+```text
+bloom-beauty/
+├── index.html         # Main HTML document (semantic & SEO-friendly)
 ├── css/
-│   └── style.css      # Complete stylesheet (900+ lines, fully commented)
+│   └── style.css      # Complete stylesheet
 ├── js/
-│   └── script.js      # Complete JavaScript (600+ lines, fully commented)
-├── images/            # (placeholder — images loaded via Unsplash CDN)
+│   └── script.js      # JavaScript functionality
+├── images/            # Placeholder for image assets
 └── README.md
 ```
 
@@ -23,74 +25,255 @@ velvet-vogue/
 
 ## ✨ Features
 
-### Opening Animation
-- Full-screen deep red velvet curtains with texture overlay
-- Cinematic slide-open from center (CSS cubic-bezier easing)
-- Brand logo, title, tagline with fade + scale entrance
-- "Explore Collection" and "Seller Portal" CTA buttons
+### Hero Experience
+
+* Elegant skincare-inspired hero section
+* Premium product showcase
+* Soft floating animations
+* Modern call-to-action buttons
+* Pinterest-style visual presentation
 
 ### Pages & Sections
-1. **Sticky Navbar** — scrolled glass effect, active link tracking, mobile hamburger menu
-2. **Hero Section** — fullscreen banner with subtle Ken Burns zoom, layered typography
-3. **Marquee Ticker** — infinite scrolling promotional strip
-4. **Featured Collection** — JavaScript-powered category tabs (All / Women / Men / Kids / Accessories)
-5. **Trending This Week** — editorial asymmetric grid layout
-6. **New Arrivals** — NEW badge cards with hover overlays
-7. **Flash Sale** — real-time countdown timer, animated sale badges, discount pricing
-8. **Designer Spotlight** — large editorial layout with designer stats
-9. **Why Shop With Us** — 4-card feature grid with hover icon effects
-10. **Testimonials** — 3-card layout with featured center card
-11. **Newsletter** — email subscription with success state
-12. **Contact** — info + contact form with validation
-13. **Footer** — 4-column grid, social icons, payment icons
 
-### JavaScript Features
-- `curtain` — cinematic intro animation
-- `cart` — add/remove/clear with localStorage persistence
-- `wishlist` — per-product toggle with icon state
-- `filtering` — instant category filtering with re-render
-- `countdown` — session-persisted flash sale timer
-- `scrollReveal` — IntersectionObserver fade-up animations
-- `toasts` — non-intrusive notification system
-- `smoothScroll` — anchor scroll with navbar offset
-- `backToTop` — scroll-triggered floating button
+#### Sticky Navigation
+
+* Responsive navigation bar
+* Mobile hamburger menu
+* Smooth scrolling
+* Active section highlighting
+
+#### Featured Categories
+
+Shop by category:
+
+* Cleansers
+* Serums
+* Moisturizers
+* Sunscreens
+* Face Masks
+* Beauty Kits
+
+#### Best Sellers
+
+* Product cards
+* Ratings
+* Wishlist button
+* Add to Cart functionality
+* Hover animations
+
+#### Shop By Skin Type
+
+Interactive sections for:
+
+* Dry Skin
+* Oily Skin
+* Combination Skin
+* Sensitive Skin
+
+#### New Arrivals
+
+* NEW product badges
+* Animated product reveal effects
+
+#### Skincare Routine Guide
+
+Morning Routine:
+
+* Cleanser
+* Serum
+* Moisturizer
+* Sunscreen
+
+Night Routine:
+
+* Cleanser
+* Treatment
+* Moisturizer
+
+#### Limited Time Offers
+
+* Promotional banners
+* Flash sale cards
+* Real-time countdown timer
+
+#### Why Choose Bloom Beauty
+
+* Clean Ingredients
+* Dermatologist Tested
+* Cruelty Free
+* Sustainable Packaging
+
+#### Testimonials
+
+Customer review cards including:
+
+* Profile image
+* Star ratings
+* Review content
+
+#### Instagram Gallery
+
+* Pinterest-inspired image layout
+* Hover effects
+* Social-style presentation
+
+#### Newsletter
+
+* Email subscription form
+* Success message interaction
+
+#### Contact Section
+
+* Business information
+* Contact form
+* Responsive layout
+
+#### Footer
+
+* Quick links
+* Product categories
+* Social media icons
+* Copyright information
+
+---
+
+## 🛒 E-Commerce Functionality
+
+### Product Management
+
+* Dynamic product rendering
+* Product search
+* Category filtering
+* Product sorting
+
+### Shopping Cart
+
+* Add to Cart
+* Remove from Cart
+* Quantity controls
+* Cart total calculation
+* Cart counter updates
+
+### Wishlist
+
+* Save favorite products
+* Toggle wishlist status
+* Visual icon feedback
+
+### Local Storage
+
+* Persistent cart data
+* Persistent wishlist data
+* Session-independent user experience
+
+---
+
+## ⚡ JavaScript Features
+
+* Product filtering system
+* Search functionality
+* Shopping cart management
+* Wishlist functionality
+* LocalStorage persistence
+* Countdown timer
+* Smooth scrolling
+* Scroll reveal animations
+* Back-to-top button
+* Form validation
+* Toast notifications
 
 ---
 
 ## 🎨 Design System
 
-| Token | Value |
-|-------|-------|
-| Background | `#0a0608` |
-| Surface | `#100c0e` |
-| Accent Red | `#8b1a1a` |
-| Gold | `#c9a84c` |
-| Text | `#f5f0ea` |
-| Display Font | Cormorant Garamond (serif) |
-| UI Font | Jost (sans-serif) |
+| Token                | Value               |
+| -------------------- | ------------------- |
+| Background           | #FFFDF9             |
+| Secondary Background | #F8F1EC             |
+| Soft Pink            | #F4D7D7             |
+| Soft Peach           | #F7E5D8             |
+| Lavender Accent      | #E7DFF5             |
+| Primary Text         | #2F2F2F             |
+| Secondary Text       | #777777             |
+| Design Style         | Pinterest Inspired  |
+| Layout               | Modern Beauty Brand |
+
+### Visual Direction
+
+* Soft pastel palette
+* Feminine aesthetics
+* Rounded components
+* Organic shapes
+* Minimalist luxury
+* Editorial-style layouts
+* High-quality beauty imagery
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Open locally** — simply open `index.html` in any modern browser. No build step required.
-2. **Images** — all images are loaded from Unsplash CDN. Internet connection required for images.
-3. **Fonts & Icons** — loaded from Google Fonts and Font Awesome CDN.
+### Run Locally
+
+Simply open:
+
+```text
+index.html
+```
+
+in any modern browser.
+
+No installation required.
+
+No build process required.
+
+### Assets
+
+* Product images loaded from Unsplash
+* Icons loaded via Font Awesome CDN
+* Optional Google Fonts integration
 
 ---
 
 ## 📱 Responsive Breakpoints
 
-| Breakpoint | Layout |
-|------------|--------|
-| `> 1100px` | Full desktop 4-column grid |
-| `≤ 1100px` | Adjusted spotlight + footer |
-| `≤ 900px`  | Stacked testimonials, single-col contact |
-| `≤ 768px`  | Mobile nav, hamburger menu |
-| `≤ 480px`  | 2-col product grid, stacked hero actions |
+| Breakpoint | Layout                  |
+| ---------- | ----------------------- |
+| >1200px    | Desktop Experience      |
+| ≤992px     | Tablet Layout           |
+| ≤768px     | Mobile Navigation       |
+| ≤576px     | Optimized Mobile Layout |
+
+---
+
+## 🧰 Built With
+
+* HTML5
+* CSS3
+* Vanilla JavaScript (ES6+)
+* Flexbox
+* CSS Grid
+* LocalStorage API
+* Font Awesome
+
+---
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+* Responsive Web Design
+* DOM Manipulation
+* JavaScript ES6+
+* Product Filtering
+* Cart Management
+* Local Storage
+* UI/UX Design Principles
+* E-Commerce Functionality
 
 ---
 
 ## 📄 License
 
-© 2025 Velvet Vogue. All rights reserved.
+This project is created for educational and portfolio purposes.
+
+© 2026 Bloom Beauty. All Rights Reserved.
