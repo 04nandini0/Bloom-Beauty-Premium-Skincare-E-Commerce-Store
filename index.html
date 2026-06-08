@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bloom Beauty – Premium Women's Skincare & Beauty. Curated skincare designed to nourish, protect, and glow." />
+  <meta name="keywords" content="skincare, beauty, serums, moisturizers, cleansers, sunscreen, face masks" />
+  <title>Bloom Beauty – Healthy Skin, Beautiful Confidence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    <p>✦ Free shipping on orders over ₹999 &nbsp;|&nbsp; Use code <strong>GLOW15</strong> for 15% off ✦</p>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="nav__logo">
+        <span class="logo-bloom">Bloom</span>
+        <span class="logo-beauty">Beauty</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#categories">Shop</a></li>
+        <li><a href="#best-sellers">Best Sellers</a></li>
+        <li><a href="#new-arrivals">New In</a></li>
+        <li><a href="#routine">Routine</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__icon" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav__icon wishlist-nav-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="nav__icon cart-btn" id="cartBtn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="text" id="searchInput" placeholder="Search for serums, moisturizers, cleansers…" aria-label="Search products" />
+        <button id="searchClose" aria-label="Close search">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="hero__eyebrow">✦ New Collection 2025</span>
+        <h1 class="hero__title">Healthy Skin,<br /><em>Beautiful</em> Confidence</h1>
+        <p class="hero__sub">Curated skincare designed to nourish, protect, and glow. Science-backed formulas with nature's finest ingredients.</p>
+        <div class="hero__ctas">
+          <a href="#best-sellers" class="btn btn--primary">Shop Collection</a>
+          <a href="#best-sellers" class="btn btn--ghost">Discover Best Sellers</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><strong>50K+</strong><span>Happy Customers</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>100%</strong><span>Clean Ingredients</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>4.9★</strong><span>Average Rating</span></div>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__img-wrap">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=80" alt="Premium skincare products beautifully arranged" class="hero__img" />
+          <div class="hero__float hero__float--1">
+            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=120&q=80" alt="Serum bottle" />
+          </div>
+          <div class="hero__float hero__float--2">
+            <span>🌸 Cruelty Free</span>
+          </div>
+          <div class="hero__float hero__float--3">
+            <span>✨ Glow Serum</span>
+            <strong>₹1,299</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Shop By Category</span>
+        <h2 class="section-title">Find Your Perfect <em>Formula</em></h2>
+      </div>
+      <div class="categories__grid" id="categoriesGrid">
+        <div class="cat-card reveal" data-filter="cleanser">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80" alt="Cleansers" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Cleansers</h3>
+            <p>12 Products</p>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-filter="serum">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80" alt="Serums" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Serums</h3>
+            <p>18 Products</p>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-filter="moisturizer">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1614159476516-4e54d2b3e82e?w=400&q=80" alt="Moisturizers" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Moisturizers</h3>
+            <p>15 Products</p>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-filter="sunscreen">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&q=80" alt="Sunscreens" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Sunscreens</h3>
+            <p>8 Products</p>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-filter="mask">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80" alt="Face Masks" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Face Masks</h3>
+            <p>10 Products</p>
+          </div>
+        </div>
+        <div class="cat-card reveal" data-filter="kit">
+          <div class="cat-card__img">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80" alt="Beauty Kits" />
+          </div>
+          <div class="cat-card__body">
+            <h3>Beauty Kits</h3>
+            <p>6 Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEST SELLERS ===== -->
+  <section class="products-section section" id="best-sellers">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Customer Favourites</span>
+        <h2 class="section-title">Best <em>Sellers</em></h2>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+        <button class="filter-btn" data-filter="serum">Serums</button>
+        <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+        <button class="filter-btn" data-filter="sunscreen">Sunscreens</button>
+        <button class="filter-btn" data-filter="mask">Face Masks</button>
+        <button class="filter-btn" data-filter="kit">Kits</button>
+      </div>
+      <div class="products__grid" id="productsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKIN TYPE ===== -->
+  <section class="skin-type section" id="skin-type">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Personalised For You</span>
+        <h2 class="section-title">Shop By <em>Skin Type</em></h2>
+      </div>
+      <div class="skin-type__grid">
+        <div class="skin-card reveal" style="--clr:#F4D7D7">
+          <div class="skin-card__icon">🌊</div>
+          <h3>Dry Skin</h3>
+          <p>Rich, hydrating formulas that restore moisture balance and strengthen your skin barrier.</p>
+          <a href="#best-sellers" class="skin-card__link">Explore →</a>
+        </div>
+        <div class="skin-card reveal" style="--clr:#E7DFF5">
+          <div class="skin-card__icon">☀️</div>
+          <h3>Oily Skin</h3>
+          <p>Lightweight, balancing products that control shine without stripping natural oils.</p>
+          <a href="#best-sellers" class="skin-card__link">Explore →</a>
+        </div>
+        <div class="skin-card reveal" style="--clr:#F7E5D8">
+          <div class="skin-card__icon">🌿</div>
+          <h3>Combination</h3>
+          <p>Dual-action formulas that hydrate dry zones while managing your T-zone.</p>
+          <a href="#best-sellers" class="skin-card__link">Explore →</a>
+        </div>
+        <div class="skin-card reveal" style="--clr:#FFF6EF">
+          <div class="skin-card__icon">🌸</div>
+          <h3>Sensitive</h3>
+          <p>Gentle, fragrance-free formulas with calming botanicals for reactive skin.</p>
+          <a href="#best-sellers" class="skin-card__link">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEW ARRIVALS ===== -->
+  <section class="new-arrivals section" id="new-arrivals">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Just Landed</span>
+        <h2 class="section-title">New <em>Arrivals</em></h2>
+      </div>
+      <div class="products__grid" id="newArrivalsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKINCARE ROUTINE ===== -->
+  <section class="routine section" id="routine">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Your Daily Ritual</span>
+        <h2 class="section-title">Build Your <em>Routine</em></h2>
+      </div>
+      <div class="routine__tabs reveal">
+        <button class="tab-btn active" data-tab="morning">☀️ Morning</button>
+        <button class="tab-btn" data-tab="night">🌙 Night</button>
+      </div>
+      <div class="routine__content" id="morningRoutine">
+        <div class="routine__steps">
+          <div class="step reveal">
+            <div class="step__num">01</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=160&q=80" alt="Cleanser step" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 1</span>
+              <h3>Gentle Cleanser</h3>
+              <p>Start fresh. Remove overnight buildup without stripping your skin's natural barrier.</p>
+              <a href="#best-sellers" class="step__link">Shop Cleansers →</a>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">02</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=160&q=80" alt="Serum step" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 2</span>
+              <h3>Brightening Serum</h3>
+              <p>Targeted actives that address pigmentation, fine lines, and dullness with every drop.</p>
+              <a href="#best-sellers" class="step__link">Shop Serums →</a>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">03</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1614159476516-4e54d2b3e82e?w=160&q=80" alt="Moisturizer step" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 3</span>
+              <h3>Hydrating Moisturizer</h3>
+              <p>Lock in moisture and create a smooth base for the rest of your routine.</p>
+              <a href="#best-sellers" class="step__link">Shop Moisturizers →</a>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">04</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=160&q=80" alt="Sunscreen step" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 4</span>
+              <h3>SPF Protection</h3>
+              <p>The most important step. Shield your skin from UV damage every single day.</p>
+              <a href="#best-sellers" class="step__link">Shop Sunscreens →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="routine__content hidden" id="nightRoutine">
+        <div class="routine__steps">
+          <div class="step reveal">
+            <div class="step__num">01</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=160&q=80" alt="Double Cleanser" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 1</span>
+              <h3>Double Cleanse</h3>
+              <p>Remove makeup and SPF with an oil cleanser, then follow with a water-based formula.</p>
+              <a href="#best-sellers" class="step__link">Shop Cleansers →</a>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">02</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=160&q=80" alt="Treatment mask" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 2</span>
+              <h3>Treatment / Mask</h3>
+              <p>Use retinol, AHAs, or a nourishing mask while your skin repairs overnight.</p>
+              <a href="#best-sellers" class="step__link">Shop Treatments →</a>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">03</div>
+            <div class="step__img"><img src="https://images.unsplash.com/photo-1614159476516-4e54d2b3e82e?w=160&q=80" alt="Night Moisturizer" /></div>
+            <div class="step__body">
+              <span class="step__label">Step 3</span>
+              <h3>Rich Night Cream</h3>
+              <p>Seal it all in with a deeply nourishing moisturizer for plump, glowing skin by morning.</p>
+              <a href="#best-sellers" class="step__link">Shop Moisturizers →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOWING RESULTS ===== -->
+  <section class="results section" id="results">
+    <div class="container">
+      <div class="results__inner">
+        <div class="results__content reveal">
+          <span class="section-eyebrow">Real Results</span>
+          <h2 class="section-title">See the <em>Glow</em></h2>
+          <p>Our customers see visible improvements in skin texture, radiance, and hydration within just 4 weeks of consistent use.</p>
+          <ul class="results__list">
+            <li><span>✓</span> 94% noticed improved hydration</li>
+            <li><span>✓</span> 89% saw reduced dark spots</li>
+            <li><span>✓</span> 92% felt skin was visibly smoother</li>
+            <li><span>✓</span> 87% experienced a natural glow</li>
+          </ul>
+          <a href="#best-sellers" class="btn btn--primary">Start Your Journey</a>
+        </div>
+        <div class="results__visual reveal">
+          <div class="results__img-wrap">
+            <div class="results__card results__card--before">
+              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=300&q=80" alt="Before skincare routine" />
+              <span class="tag-label">Before</span>
+            </div>
+            <div class="results__card results__card--after">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&q=80" alt="After skincare routine glowing skin" />
+              <span class="tag-label">After</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIMITED OFFERS ===== -->
+  <section class="offers section" id="offers">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Don't Miss Out</span>
+        <h2 class="section-title">Limited Time <em>Offers</em></h2>
+      </div>
+      <div class="offers__timer reveal">
+        <p class="timer-label">✦ Flash Sale Ends In ✦</p>
+        <div class="countdown" id="countdown">
+          <div class="time-block"><span id="hours">00</span><small>Hours</small></div>
+          <div class="time-sep">:</div>
+          <div class="time-block"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="time-sep">:</div>
+          <div class="time-block"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+      </div>
+      <div class="offers__grid">
+        <div class="offer-card reveal">
+          <div class="offer-card__badge">30% OFF</div>
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80" alt="Vitamin C Serum offer" />
+          <div class="offer-card__body">
+            <h3>Vitamin C Brightening Kit</h3>
+            <p>Complete 3-step brightening system for radiant, even-toned skin.</p>
+            <div class="offer-card__price">
+              <span class="price-old">₹3,499</span>
+              <span class="price-new">₹2,449</span>
+            </div>
+            <button class="btn btn--primary" onclick="addToCartById(15)">Add To Cart</button>
+          </div>
+        </div>
+        <div class="offer-card offer-card--wide reveal">
+          <div class="offer-card__badge">BUY 2 GET 1</div>
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Skincare bundle offer" />
+          <div class="offer-card__body">
+            <h3>The Glow Starter Bundle</h3>
+            <p>Everything you need to start your skincare journey. Cleanser + Serum + Moisturizer at an unbeatable price.</p>
+            <div class="offer-card__price">
+              <span class="price-old">₹5,199</span>
+              <span class="price-new">₹3,199</span>
+            </div>
+            <button class="btn btn--primary" onclick="addToCartById(16)">Add To Cart</button>
+          </div>
+        </div>
+        <div class="offer-card reveal">
+          <div class="offer-card__badge">25% OFF</div>
+          <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80" alt="Face mask offer" />
+          <div class="offer-card__body">
+            <h3>Overnight Glow Mask</h3>
+            <p>Wake up to plumper, brighter skin with our bestselling overnight mask.</p>
+            <div class="offer-card__price">
+              <span class="price-old">₹1,799</span>
+              <span class="price-new">₹1,349</span>
+            </div>
+            <button class="btn btn--primary" onclick="addToCartById(10)">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Our Promise</span>
+        <h2 class="section-title">Why Choose <em>Bloom Beauty</em></h2>
+      </div>
+      <div class="why__grid">
+        <div class="why-card reveal">
+          <div class="why-card__icon">🌿</div>
+          <h3>Clean Ingredients</h3>
+          <p>No parabens, sulfates, or synthetic fragrances. Every formula is crafted with nature-derived, skin-loving ingredients.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon">🔬</div>
+          <h3>Dermatologist Tested</h3>
+          <p>All products are clinically tested and dermatologist-approved for safety and efficacy across all skin types.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon">🐰</div>
+          <h3>Cruelty Free</h3>
+          <p>We never test on animals. Bloom Beauty is proudly certified cruelty-free by PETA and Leaping Bunny.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card__icon">♻️</div>
+          <h3>Sustainable Packaging</h3>
+          <p>Our packaging is made from 100% recycled or biodegradable materials. Beauty shouldn't cost the earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Real Stories</span>
+        <h2 class="section-title">What Our Glowers <em>Say</em></h2>
+      </div>
+      <div class="reviews__grid">
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"I've tried so many serums and nothing has worked like the Bloom Vitamin C serum. My skin is genuinely glowing and my dark spots have faded so much in just 6 weeks!"</p>
+          <div class="review-card__author">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80" alt="Priya Sharma" />
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Mumbai, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"The Hydra Glow moisturizer is my holy grail. It's so lightweight but incredibly hydrating. My combination skin has never felt so balanced!"</p>
+          <div class="review-card__author">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=80&q=80" alt="Ananya Reddy" />
+            <div>
+              <strong>Ananya Reddy</strong>
+              <span>Bengaluru, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"As someone with extremely sensitive skin, finding Bloom Beauty was a game changer. The Rose Calming Cleanser is so gentle yet effective. Zero irritation!"</p>
+          <div class="review-card__author">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=80&q=80" alt="Meera Nair" />
+            <div>
+              <strong>Meera Nair</strong>
+              <span>Chennai, India</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-card__stars">★★★★☆</div>
+          <p class="review-card__text">"The Bloom Starter Kit was the best skincare investment I've made! Everything works together beautifully and my skin has transformed completely. Highly recommend."</p>
+          <div class="review-card__author">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=80&q=80" alt="Kavya Singh" />
+            <div>
+              <strong>Kavya Singh</strong>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">@bloombeauty</span>
+        <h2 class="section-title">The Bloom <em>Aesthetic</em></h2>
+        <p class="section-sub">Follow us on Instagram for daily glow inspiration</p>
+      </div>
+      <div class="gallery__masonry">
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80" alt="Beauty flatlay" /><div class="gallery__overlay"><span>♡ 2.4K</span></div></div>
+        <div class="gallery__item gallery__item--tall reveal"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt="Glowing skin" /><div class="gallery__overlay"><span>♡ 5.1K</span></div></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&q=80" alt="Skincare routine" /><div class="gallery__overlay"><span>♡ 3.2K</span></div></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&q=80" alt="Face mask" /><div class="gallery__overlay"><span>♡ 1.8K</span></div></div>
+        <div class="gallery__item gallery__item--tall reveal"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&q=80" alt="Product photography" /><div class="gallery__overlay"><span>♡ 4.7K</span></div></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1614159476516-4e54d2b3e82e?w=400&q=80" alt="Moisturizer texture" /><div class="gallery__overlay"><span>♡ 2.9K</span></div></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80" alt="Beauty collection" /><div class="gallery__overlay"><span>♡ 6.3K</span></div></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80" alt="Skincare selfie" /><div class="gallery__overlay"><span>♡ 3.8K</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter section" id="newsletter">
+    <div class="container">
+      <div class="newsletter__inner reveal">
+        <div class="newsletter__deco newsletter__deco--1">🌸</div>
+        <div class="newsletter__deco newsletter__deco--2">✨</div>
+        <div class="newsletter__deco newsletter__deco--3">🌿</div>
+        <span class="section-eyebrow">Exclusive Access</span>
+        <h2 class="newsletter__title">Join The <em>Glow Club</em></h2>
+        <p>Exclusive skincare tips, new launches, and VIP offers – delivered to your inbox.</p>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <input type="email" placeholder="Enter your email address…" required aria-label="Email address" />
+          <button type="submit" class="btn btn--primary">Subscribe ✦</button>
+        </form>
+        <p class="newsletter__note">No spam. Unsubscribe anytime. 💌</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">We'd Love To <em>Hear From You</em></h2>
+      </div>
+      <div class="contact__inner">
+        <div class="contact__info reveal">
+          <div class="contact-item">
+            <div class="contact-item__icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Bloom Beauty HQ, 42 Rose Garden Lane,<br>Malviya Nagar, Jaipur – 302017, Rajasthan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 98765 43210<br>Mon–Sat, 9 AM – 6 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>hello@bloombeauty.in<br>We reply within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" placeholder="How can we help?" />
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" rows="5" placeholder="Tell us everything…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message ✦</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo footer__logo">
+            <span class="logo-bloom">Bloom</span>
+            <span class="logo-beauty">Beauty</span>
+          </a>
+          <p>Crafting luxurious skincare with clean, science-backed ingredients for your most radiant skin.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Pinterest" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.16 1.22-5.16s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.04.51 1.88 1.53 1.88 1.83 0 3.24-1.93 3.24-4.72 0-2.47-1.77-4.19-4.31-4.19-2.93 0-4.65 2.2-4.65 4.47 0 .88.34 1.83.76 2.35.08.1.09.19.07.29-.08.32-.25 1.04-.29 1.18-.05.19-.16.23-.37.14-1.39-.65-2.26-2.68-2.26-4.32 0-3.51 2.55-6.74 7.35-6.74 3.86 0 6.86 2.75 6.86 6.42 0 3.83-2.41 6.9-5.76 6.9-1.12 0-2.18-.58-2.54-1.27l-.69 2.59c-.25.97-.93 2.18-1.39 2.91.05.02.1.03.15.04A10 10 0 0 0 22 12C22 6.48 17.52 2 12 2z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.5C5.12 20 12 20 12 20s6.88 0 8.59-.5a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#offers">Sale & Offers</a></li>
+            <li><a href="#categories">Gift Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#categories">Cleansers</a></li>
+            <li><a href="#categories">Serums</a></li>
+            <li><a href="#categories">Moisturizers</a></li>
+            <li><a href="#categories">Sunscreens</a></li>
+            <li><a href="#categories">Face Masks</a></li>
+            <li><a href="#categories">Beauty Kits</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Bloom Beauty. All rights reserved. Made with 🌸 in India.</p>
+        <div class="footer__payments">
+          <span>Visa</span><span>Mastercard</span><span>UPI</span><span>PayTM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart">
+    <div class="cart-sidebar__header">
+      <h2>Your Bag <span id="cartItemCount"></span></h2>
+      <button class="cart-sidebar__close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-sidebar__body" id="cartItems">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="cart-sidebar__footer" id="cartFooter">
+      <!-- Rendered by JS -->
+    </div>
+  </aside>
+
+  <!-- ===== QUICK VIEW MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+    <button class="modal__close" id="modalClose" aria-label="Close modal">✕</button>
+    <div class="modal__inner" id="modalInner">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
